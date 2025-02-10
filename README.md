@@ -12,8 +12,10 @@ Designed a gradient descent-based optimization algorithm in a simulation to mini
 ### 1. Energy Consumption Model
 The power required for the UAV is primarily influenced by aerodynamic drag:
 
-- **Drag Force**: 
-  \[ F_d = \frac{1}{2} \rho v^2 A C_d \]
+- **Drag Force:**
+  $$
+  F_d = \frac{1}{2} \rho v^2 A C_d
+  $$
   where:
   - \( F_d \) = Drag force (N)
   - \( \rho \) = Air density (kg/m³)
@@ -21,8 +23,10 @@ The power required for the UAV is primarily influenced by aerodynamic drag:
   - \( A \) = Wing area (m²)
   - \( C_d \) = Drag coefficient (dimensionless)
 
-- **Power Required**:
-  \[ P = \frac{F_d \cdot v}{\eta} \]
+- **Power Required:**
+  $$
+  P = \frac{F_d \cdot v}{\eta}
+  $$
   where:
   - \( P \) = Power required (W)
   - \( \eta \) = Propulsion efficiency (dimensionless)
@@ -30,11 +34,15 @@ The power required for the UAV is primarily influenced by aerodynamic drag:
 ### 2. Gradient Descent Optimization
 The optimization aims to minimize power consumption by adjusting speed. Using gradient descent:
 
-- **Compute Partial Derivative**:
-  \[ \frac{dP}{dv} = \frac{P(v+\Delta v) - P(v)}{\Delta v} \]
+- **Compute Partial Derivative:**
+  $$
+  \frac{dP}{dv} = \frac{P(v+\Delta v) - P(v)}{\Delta v}
+  $$
 
-- **Update Speed**:
-  \[ v_{new} = v - \alpha \frac{dP}{dv} \]
+- **Update Speed:**
+  $$
+  v_{new} = v - \alpha \frac{dP}{dv}
+  $$
   where \( \alpha \) is the learning rate.
 
 ### 3. Iterative Process
@@ -52,10 +60,10 @@ The algorithm effectively reduces energy consumption by adjusting UAV speed dyna
 ## Visualization
 
 Below is a graphical representation of the optimization process:
+
 ![UAV Energy Optimization](uav_energy_optimization.png)
 
-
-Figure 1.1: Speed variation and energy consumption reduction over iterations.
+**Figure 1.1:** Speed variation and energy consumption reduction over iterations.
 
 ## Conclusion
 This approach demonstrates a mathematical and computational method to optimize UAV energy efficiency, leveraging physics-based modeling and numerical optimization.
