@@ -1,7 +1,5 @@
 # UAV Energy Optimization using Gradient Descent
 
----
-
 ## Introduction
 This project optimizes the energy consumption of an Unmanned Aerial Vehicle (UAV) by adjusting its speed using gradient descent. The goal is to find an optimal balance between speed and energy efficiency.
 
