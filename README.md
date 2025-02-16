@@ -15,8 +15,8 @@ The power required for the UAV is primarily influenced by aerodynamic drag:
   F_d = \frac{1}{2} \rho v^2 A C_d
   ```
   where:
-  - \( F_d \) = Drag force (N)
-  - \( \rho \) = Air density (kg/m³)
+  - $F_d$ = Drag force (N)
+  - $\rho$ = Air density (kg/m³)
   - \( v \) = UAV speed (m/s)
   - \( A \) = Wing area (m²)
   - \( C_d \) = Drag coefficient (dimensionless)
