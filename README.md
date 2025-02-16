@@ -11,36 +11,30 @@ Designed a gradient descent-based optimization algorithm in a simulation to mini
 The power required for the UAV is primarily influenced by aerodynamic drag:
 
 - **Drag Force:**
-  ```math
-  F_d = \frac{1}{2} \rho v^2 A C_d
-  ```
+
+  $F_d = \frac{1}{2} \rho v^2 A C_d$
+  
   where:
   - $F_d$ = Drag force (N)
   - $\rho$ = Air density (kg/m³)
-  - \( v \) = UAV speed (m/s)
-  - \( A \) = Wing area (m²)
-  - \( C_d \) = Drag coefficient (dimensionless)
+  - $v$ = UAV speed (m/s)
+  - $A$ = Wing area (m²)
+  - $C_d$ = Drag coefficient (dimensionless)
 
 - **Power Required:**
-  $$
-  P = \frac{F_d \cdot v}{\eta}
-  $$
+  $$P = \frac{F_d \cdot v}{\eta}$$
   where:
-  - \( P \) = Power required (W)
-  - \( \eta \) = Propulsion efficiency (dimensionless)
+  - $P$ = Power required (W)
+  - $\eta$ = Propulsion efficiency (dimensionless)
 
 ### 2. Gradient Descent Optimization
 The optimization aims to minimize power consumption by adjusting speed. Using gradient descent:
 
 - **Compute Partial Derivative:**
-  $$
-  \frac{dP}{dv} = \frac{P(v+\Delta v) - P(v)}{\Delta v}
-  $$
+  $$\frac{dP}{dv} = \frac{P(v+\Delta v) - P(v)}{\Delta v}$$
 
 - **Update Speed:**
-  $$
-  v_{new} = v - \alpha \frac{dP}{dv}
-  $$
+  $$v_{new} = v - \alpha \frac{dP}{dv}$$
   where \( \alpha \) is the learning rate.
 
 ### 3. Iterative Process
