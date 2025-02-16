@@ -11,9 +11,9 @@ Designed a gradient descent-based optimization algorithm in a simulation to mini
 The power required for the UAV is primarily influenced by aerodynamic drag:
 
 - **Drag Force:**
-  $$
+  ```math
   F_d = \frac{1}{2} \rho v^2 A C_d
-  $$
+  ```
   where:
   - \( F_d \) = Drag force (N)
   - \( \rho \) = Air density (kg/m³)
